@@ -1,0 +1,42 @@
+body {
+    background: #111;
+    position: relative;
+  }
+  
+  svg {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 860px;
+    height: 500px;
+  }
+  
+  #underlay {
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -ms-filter: blur(4px);
+    -o-filter: blur(4px);
+    filter: blur(4px);
+  }
+  
+  #underlay path,
+  #underlay circle {
+    fill: none;
+  }
+  
+  #underlay .lit {
+    fill: #0e0;
+    stroke: #0e0;
+  }
+  
+  #overlay path,
+  #overlay circle {
+    fill: #222;
+    stroke: #5f0;
+    stroke-opacity: 0;
+  }
+  
+  #overlay .lit {
+    fill: #0e0;
+    stroke-opacity: 1;
+  }
